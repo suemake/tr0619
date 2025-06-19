@@ -1,0 +1,218 @@
+/* reset */
+* {
+    font-size: inherit;
+    font-weight: inherit;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+address {
+    font-style: normal;
+}
+
+body {
+    line-height: 1;
+    color: #333;
+    word-break: keep-all;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+button {
+    background: transparent;
+    border: none;
+    border: 0;
+    cursor: pointer;
+}
+
+p {
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+/* layout */
+
+.inner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.title {
+    max-width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.title p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.default {
+    padding: 120px 0;
+}
+
+
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap');
+
+body {
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.serif {
+    font-family: "Noto Serif KR", serif;
+}
+
+
+
+#header {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+#header .hd_wrap {
+    display: flex;
+
+    align-items: center;
+    height: 120px;
+}
+
+
+#header .hd_wrap img {
+    height: 50px;
+}
+
+#header .gnb {
+    margin-left: auto;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#header .gnb>ul>li>a {
+    font-size: 18px;
+}
+
+#header .utils {
+    margin-left: 80px;
+    gap: 16px;
+    display: flex;
+}
+
+#header .utils img {
+    width: 24px;
+    height: 32px;
+}
+
+.main_visual {
+    position: relative;
+    background: url(../images/main_visual.jpg) no-repeat center center/cover;
+    height: calc(100vh - 120px);
+}
+
+.main_visual .title {
+    display: block;
+    margin-bottom: 40px;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+
+    text-shadow: 1px 4px 2px rgba(0, 0, 0, 0.3);
+
+    transform: translate(-50%, -50%);
+}
+
+.main_visual .title h2 {
+    font-family: "Noto Serif KR", serif;
+}
+
+.main_visual::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+}
+
+.main_content {}
+
+.main_content .inner {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.main_content .itm em {
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+.main_event {
+    background: #f9f9f9;
+}
+
+.main_event .inner {
+    display: flex;
+    gap: 30px;
+}
+
+
+
+.main_event .itm em {
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+}
+
+#footer {
+    padding: 80px 0;
+}
